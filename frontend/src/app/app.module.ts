@@ -6,15 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { GameCrudComponent } from './views/game-crud/game-crud.component';
 import { GameCreateComponent } from './components/game/game-create/game-create.component';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { GameCreateComponent } from './components/game/game-create/game-create.c
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,    
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
