@@ -1,19 +1,19 @@
 {
-  "products":[
+  "games":[
     {
       "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 2.89
+      "name": "The Last of US Part I",
+      "price": 22.91
     },
     {
       "id": 2,
-      "name": "Caneta BIC Vermelha",
-      "price": 2.89
+      "name": "The Last of US Part II",
+      "price": 162.89
     },
     {
       "id": 3,
-      "name": "Caneta BIC Azul",
-      "price": 2.89
+      "name": "FIFA 20",
+      "price": 52.89
     }
   ]
 
