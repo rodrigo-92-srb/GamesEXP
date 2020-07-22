@@ -14,6 +14,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { GameCrudComponent } from './views/game-crud/game-crud.component';
+import { GameCreateComponent } from './components/game/game-create/game-create.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { GameCrudComponent } from './views/game-crud/game-crud.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    GameCrudComponent
+    GameCrudComponent,
+    GameCreateComponent
   ],
   imports: [
     BrowserModule,

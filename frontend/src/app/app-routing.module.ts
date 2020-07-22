@@ -1,3 +1,4 @@
+import { GameCreateComponent } from './components/game/game-create/game-create.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: "games",
     component: GameCrudComponent
+  },
+  {
+    path:"games/create",
+    component: GameCreateComponent
   }
 ];
 
