@@ -1,3 +1,4 @@
+import { Game } from './../game.model';
 import { GameService } from './../game.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -9,13 +10,21 @@ import { Router } from '@angular/router';
 })
 export class GameCreateComponent implements OnInit {
 
+  game: Game = {
+    name: '',
+    price: null
+  }
+
   constructor(private GameService: GameService, private router: Router) { }
 
   ngOnInit(): void {
     
   }
   createGame(): void{
-    this.GameService.showMessage('Game criado com sucesso !')
+    this.GameService.create(this.game).subscribe(() => {
+      this.GameService.showMessage('Game criado com sucesso !')
+      this.router.navigate(['/games'])
+    })
   }
 
   cancel(): void{

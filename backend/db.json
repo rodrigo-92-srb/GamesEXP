@@ -1,5 +1,5 @@
 {
-  "games":[
+  "games": [
     {
       "id": 1,
       "name": "The Last of US Part I",
@@ -16,5 +16,4 @@
       "price": 52.89
     }
   ]
-
 }
