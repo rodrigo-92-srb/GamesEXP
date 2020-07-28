@@ -1,4 +1,6 @@
+import { GameDeleteComponent } from './components/game/game-delete/game-delete.component';
 import { GameCreateComponent } from './components/game/game-create/game-create.component';
+import { GameUpdateComponent } from './components/game/game-update/game-update.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path:"games/create",
     component: GameCreateComponent
+  },
+  {
+    path:"games/update/:id",
+    component: GameUpdateComponent
+  },
+  {
+    path:"games/delete/:id",
+    component: GameDeleteComponent
   }
 ];
 

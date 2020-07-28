@@ -34,6 +34,8 @@ import { MatSortModule } from '@angular/material/sort';
 
 import localePT from '@angular/common/locales/pt';
 import {registerLocaleData } from '@angular/common';
+import { GameUpdateComponent } from './components/game/game-update/game-update.component';
+import { GameDeleteComponent } from './components/game/game-delete/game-delete.component';
 
 registerLocaleData(localePT);
 
@@ -47,7 +49,9 @@ registerLocaleData(localePT);
     GameCrudComponent,
     GameCreateComponent,
     GameReadComponent,
-    GameRead2Component
+    GameRead2Component,
+    GameUpdateComponent,
+    GameDeleteComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title> Atualizar Game </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Nome" [(ngModel)]="game.name" name="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Preço (R$)" [(ngModel)]="game.price" name="price">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="updateGame()" color="primary">
+    Atualizar
+  </button>
+  
+  <button mat-raised-button (click)="cancel()" color="accent">
+    Cancelar
+  </button>
+</mat-card>
+
